@@ -1,0 +1,6 @@
+&problemdata
+
+gamma  = 1.5d+00
+lambda = 2.0d+00
+czero  = 5.0d-01
+eps    = 5.0d-02/
