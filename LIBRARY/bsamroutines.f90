@@ -579,10 +579,10 @@ xlower(1:ndims) = info%xlower(1:ndims)
 !
 SELECT CASE(ndims)
   CASE(2)
-    CALL QInit2D(info%q(1:mx(1),1:mx(2),1        ,1:nrvars),mx(1:2), &
+    CALL QInit2D(info%q(1:mx(1),1:mx(2),1      ,1:nrvars),mx(1:2), &
                  nrvars,h,xlower(1:2))
   CASE(3)
-    CALL QInit3D(info%q(1:mx(1),1:mx(2),1:mx(3)+1,1:nrvars),mx(1:3), &
+    CALL QInit3D(info%q(1:mx(1),1:mx(2),1:mx(3),1:nrvars),mx(1:3), &
                  nrvars,h,xlower(1:3))
 END SELECT
 !
