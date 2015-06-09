@@ -1,1 +1,9 @@
-This is a git repository for BSAM 1.2
+This is a git repository for BSAM Version 1.2
+
+The BSAM website is
+
+http://www.math.utk.edu/~swise/Site/BSAM.html
+
+BSAM, which stands for Block-Structured Adaptive Multigrid, is a Fortran 95
+code designed to solve elliptic-parabolic systems of PDE on block-structured,
+locally Cartesian, adaptive meshes in 2 and 3D using the FAS multigrid method.
