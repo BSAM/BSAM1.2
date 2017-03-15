@@ -132,8 +132,9 @@ SELECT CASE(ndims)
     STOP
 END SELECT
 !
-! Initialize solution arrays:
-info%q = 0; info%qold = 0
+! Initialize floating point arrays:
+info%q = 0.0_r8; info%qold = 0.0_r8; info%qc = 0.0_r8; info%qrte = 0.0_r8
+info%aux = 0.0_r8; info%f = 0.0_r8; info%rf = 0.0_r8; info%ftmp = 0.0_r8
 !
 ! Initialize error flags:
 info%errorflags = 0
