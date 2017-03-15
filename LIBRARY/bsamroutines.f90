@@ -834,6 +834,8 @@ PRINT *, 'mb =', info%mbounds
 PRINT *, 'ngrid', info%ngrid
 PRINT *, 'activegrid', info%activegrid
 PRINT *, 'initialgrid', info%initialgrid
+PRINT *, 'defective', info%defective
+PRINT *, 'restartgrid', info%restartgrid
 PRINT *, 'tobedeleted', info%tobedeleted
 PRINT *, 'fieldsallocated', info%fieldsallocated
 PRINT *, ' '
