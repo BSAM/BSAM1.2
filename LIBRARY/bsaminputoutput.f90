@@ -335,11 +335,15 @@ level_loop: DO lvl = rootlevel, restartfinestlevel
       END IF
     END IF
 !
-    info%tobedeleted = .FALSE.; info%activegrid = .FALSE.
+    info%tobedeleted = .FALSE.
     info%initialgrid = .FALSE.
+    info%activegrid = .TRUE.
+    info%defective = .FALSE.
+    info%restartgrid = .TRUE.
 !
 ! These rootlevel constructs should not be changed:
     IF(level>rootlevel) THEN
+!
       info%fieldsallocated = .FALSE.
       info%maxlevel = maxlevel; info%nsubgrids = 0
       info%level = level
